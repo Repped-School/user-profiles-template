@@ -1,46 +1,145 @@
-# NextJS with Firebase Auth App Router Template
+# User Profile Dashboard Project
 
-[See Live Demo of this Template](https://drt-next-js-template-app-router.netlify.app/)
+## TABLE OF CONTENTS
+- [Project Collaboration Requirements](#project-collaboration-requirements)
+- [Phase 1: Basic Profile Cards with Favorite Button](#phase-1-basic-profile-cards-with-favorite-button)
+- [Phase 2: Add Modal for User Details and Favorites Column](#phase-2-add-modal-for-user-details-and-favorites-column)
+- [Phase 3: Dark Mode Toggle](#phase-3-dark-mode-toggle)
+- [Phase 4: Filtering by Country and Name](#phase-4-filtering-by-country-and-name)
 
-## Topics
-- [Get Started](#get-started)
-- [Starting the Project](#starting-the-project)
-- [Deploying on Netlify](#deploying-on-netlify)
-___
-## Getting Started
-### Use Template
-#### 1. To get started, click the GREEN "Use this Template" button at the top of the repo
-<img width="915" alt="Screen Shot 2022-07-06 at 12 54 01 PM" src="https://user-images.githubusercontent.com/29741570/177612998-4aac9237-5a1e-4f13-8ae0-468587521564.png">
+> **NOTE**: Each phase builds on the previous one. Start with Phase 1 and progress sequentially.
 
-#### 2. Make sure YOUR github account is selected in the dropdown and name your project
-<img width="763" alt="Screen Shot 2022-07-06 at 12 54 48 PM" src="https://user-images.githubusercontent.com/29741570/177613126-dd38f678-7553-4f27-8a4a-75680f14d71e.png">
+---
 
-#### 3. Clone your new repo to your local machine
-#### 4. Go to the **NEXT** section
+## Project Collaboration Requirements
 
-## Starting the Project
-1. Create a Firebase project and set up authentication. Use [these videos](https://vimeo.com/showcase/codetracker-firebase) as a refresher if needed.
-1. From your command line, be in the root directory and run `npm install` OR `npm i` for short.
-1. Next, run `npm run prepare`. This command sets up husky to track eslint errors on commit that will make your deploy fail on Netlify.
-1. To start your application, run `npm run dev`. THIS IS THE COMMAND YOU WILL USE TO RUN YOUR DEVELOPMENT SERVER FROM NOW ON.
-1. Open [http://localhost:3000](http://localhost:3000) with your browser.
+- **Create a Repo**: Use the green "Use this template" button to create a repo from this template. **Do NOT fork.**
+- **Work Together**: The team should move through each phase together. One person drives while others assist, then rotate!
+- **Ticket Time Limit**: Limit each ticket to 10 minutes. If stuck, seek help.
+- **Set a Goal Phase**: Decide as a team which phase you aim to complete and post this decision in the designated Slack channel. This goal will set your judging criteria.
+- **Collaborative Mindset**: Take turns coding and reviewing. Help each team member stay up to speed.
 
-### Deploying on Netlify
-Netlify will automatically detect your project and prepopulate the settings, but should something go wrong and it does not, here are the commands:
+---
 
-- Build Command: `npm run build`
-- Publish directory: `.next`
+## [DEMO SITE](https://hack-user-profiles.netlify.app/)
 
-#### Additional Steps to Take on Netlify
-- Add Environmental Variables
-    - Any Enviromental variables you are using in your `.env` file should be added to Netlify. 
-        - Go to Site settings > Build & deploy > Environment > Environment variables and the keys and values there if you did not add them when you were deploying your site
+---
 
-- Update Firebase URL Settings
-    - In Firebase under Authentication select sign in methods, scroll to Authorized domains. Add your Netlify URL.
-        
-## Learn More about Next.js
-To learn more about Next.js, take a look at the following resources:
+## Phase 1: Basic Profile Cards with Favorite Button
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+
+### Objective
+Display user profile cards with basic details (name, country). Users can hide/show details on each card and favorite a profile.
+
+### Expectations
+- Display user profile cards with picture, name, and country.
+- A button to toggle additional details (email and phone) on the card.
+- A favorite button that visually changes when favorited.
+
+### MVP Tickets (Phase 1)
+
+1. **Setup Repository**
+   - **User Story**: As a team member, I want a Git repository to track and save our project.
+   - **Acceptance Criteria**: Repository is created on GitHub, with access for all team members and an initialized README.
+
+2. **Fetch and Display User Profiles**
+   - **User Story**: As a user, I want to see user profiles on the page.
+   - **Acceptance Criteria**: Fetch 8 profiles from [Random User API](https://randomuser.me/api/?results=8). Display picture, name, and country on each card.
+
+3. **Add Favorite Button**
+   - **User Story**: As a user, I want to mark profiles as favorites.
+   - **Acceptance Criteria**: Add a favorite/unfavorite button on each profile card. Favorited profiles change button appearance (e.g., red when favorited).
+
+4. **Toggle User Details on Card**
+   - **User Story**: As a user, I want to toggle additional profile details on each card.
+   - **Acceptance Criteria**: Clicking a button shows/hides additional details (email, phone).
+
+5. **Phase 1 Documentation**
+   - **User Story**: As a team, we want documentation of our work in this phase.
+   - **Acceptance Criteria**: README includes Phase 1 explanation and screenshots of the completed phase.
+
+---
+
+## Phase 2: Add Modal for User Details and Favorites Column
+
+### Objective
+Replace on-card details toggle with a modal view. Add a favorites column to display favorited profiles.
+
+### Expectations
+- A modal displays user details.
+- Remove the details toggle on the card.
+- Add a "Favorites" column with favorited profiles.
+- Add a "View More Profiles" button to fetch new profiles and overwrite the current list.
+
+### MVP Tickets (Phase 2)
+
+1. **Replace Details Toggle with Modal**
+   - **User Story**: As a user, I want to view profile details in a modal.
+   - **Acceptance Criteria**: Clicking a profile opens a modal with a larger picture, name, email, phone, and location.
+
+2. **Add Favorites Column**
+   - **User Story**: As a user, I want a section to view my favorited profiles.
+   - **Acceptance Criteria**: Display favorited profiles in a right-side column, each with a smaller card layout.
+
+3. **View More Profiles Button**
+   - **User Story**: As a user, I want to refresh the profile list.
+   - **Acceptance Criteria**: Button fetches a new set of 8 profiles, overwriting the current list.
+
+4. **Phase 2 Documentation**
+   - **User Story**: As a team, we want documentation of our work in this phase.
+   - **Acceptance Criteria**: README includes Phase 2 functionality, modal explanation, and screenshots.
+
+---
+
+## Phase 3: Dark Mode Toggle
+
+### Objective
+Enhance the user experience with a Dark Mode toggle, allowing users to switch between light and dark themes.
+
+### Expectations
+- Add a Dark Mode toggle in the navbar.
+- All components adjust colors based on the chosen theme.
+
+### MVP Tickets (Phase 3)
+
+1. **Add Dark Mode Toggle**
+   - **User Story**: As a user, I want the option to switch between dark and light themes.
+   - **Acceptance Criteria**: Toggle button switches the theme for all components.
+
+2. **Dark Mode Styling**
+   - **User Story**: As a user, I want consistent styling for dark and light themes.
+   - **Acceptance Criteria**: Cards, modals, and other components adapt styling based on the theme.
+
+3. **Phase 3 Documentation**
+   - **User Story**: As a team, we want documentation of our work in this phase.
+   - **Acceptance Criteria**: README includes dark mode instructions and screenshots in both themes.
+
+---
+
+## Phase 4: Filtering by Country and Name
+
+### Objective
+Add filtering by country and sorting by first or last name to enhance search capabilities.
+
+### Expectations
+- Filter dropdown for country (dynamically populated from loaded profiles).
+- Sort profiles by first or last name.
+
+### MVP Tickets (Phase 4)
+
+1. **Add Country Filter Dropdown**
+   - **User Story**: As a user, I want to filter profiles by country.
+   - **Acceptance Criteria**: Dropdown shows countries from loaded profiles. Selecting a country filters displayed profiles.
+
+2. **Sort by First or Last Name**
+   - **User Story**: As a user, I want to sort profiles alphabetically.
+   - **Acceptance Criteria**: Dropdown allows sorting by first or last name. Profiles reorder based on selection.
+
+3. **Final Documentation**
+   - **User Story**: As a team, we want complete documentation of our project.
+   - **Acceptance Criteria**: README includes a project overview, final screenshots, and deployment link.
+
+---
+
+Each phase is carefully broken down to support beginner developers in learning React. Please proceed phase-by-phase, completing each ticket collaboratively for best learning outcomes.
