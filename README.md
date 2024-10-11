@@ -46,7 +46,10 @@ Display user profile cards with basic details (name, country). Users can hide/sh
 
 2. **Fetch and Display User Profiles**
    - **User Story**: As a user, I want to see user profiles on the page.
-   - **Acceptance Criteria**: Fetch 8 profiles from [Random User API](https://randomuser.me/api/?results=8). Display picture, name, and country on each card.
+   - **Acceptance Criteria**: 
+       - Fetch 8 user profiles from the Random User API.
+       - https://randomuser.me/api/?results=8 **(to modify number of results, change the query param value)**__
+       - Each profile card displays the user’s picture, name, and country.
 
 3. **Add Favorite Button**
    - **User Story**: As a user, I want to mark profiles as favorites.
