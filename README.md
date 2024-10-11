@@ -21,12 +21,13 @@
 
 ---
 
-## [DEMO SITE](https://hack-user-profiles.netlify.app/)
+[DEMO SITE](https://hack-user-profiles.netlify.app/)
 
 ---
 
 ## Phase 1: Basic Profile Cards with Favorite Button
 
+<img width="1421" alt="Screenshot 2024-10-11 at 7 40 09 AM" src="https://github.com/user-attachments/assets/e56a9e2e-d3d2-4a3e-a573-b9337be5f9d7">
 
 
 ### Objective
@@ -62,6 +63,8 @@ Display user profile cards with basic details (name, country). Users can hide/sh
 ---
 
 ## Phase 2: Add Modal for User Details and Favorites Column
+<img width="1377" alt="Screenshot 2024-10-11 at 7 40 19 AM" src="https://github.com/user-attachments/assets/4b1935d4-c847-42a7-a57c-c56d94db9350">
+
 
 ### Objective
 Replace on-card details toggle with a modal view. Add a favorites column to display favorited profiles.
@@ -94,6 +97,9 @@ Replace on-card details toggle with a modal view. Add a favorites column to disp
 
 ## Phase 3: Dark Mode Toggle
 
+https://github.com/user-attachments/assets/304b830b-0497-44f6-aa22-3d3a4599f6ca
+
+
 ### Objective
 Enhance the user experience with a Dark Mode toggle, allowing users to switch between light and dark themes.
 
@@ -118,6 +124,7 @@ Enhance the user experience with a Dark Mode toggle, allowing users to switch be
 ---
 
 ## Phase 4: Filtering by Country and Name
+https://github.com/user-attachments/assets/884c32a9-7375-46df-aabb-9bb88d66f7bd
 
 ### Objective
 Add filtering by country and sorting by first or last name to enhance search capabilities.
