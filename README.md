@@ -1,4 +1,4 @@
-# User Profile Dashboard Project
+# User Profile Dashboard Project | [DEMO SITE](https://hack-user-profiles.netlify.app/)
 
 ## TABLE OF CONTENTS
 - [Project Collaboration Requirements](#project-collaboration-requirements)
@@ -21,10 +21,6 @@
 - **Ticket Time Limit**: Limit each ticket to 10 minutes. If stuck, seek help.
 - **Set a Goal Phase**: Decide as a team which phase you aim to complete and post this decision in the designated Slack channel. This goal will set your judging criteria.
 - **Collaborative Mindset**: Take turns coding and reviewing. Help each team member stay up to speed.
-
----
-
-[DEMO SITE](https://hack-user-profiles.netlify.app/)
 
 ---
 
