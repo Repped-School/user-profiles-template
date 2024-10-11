@@ -23,51 +23,6 @@ npm i
 npm run prepare
 ```
 
-### Instructions for Setting Up GitHub Project Board
-
-We are going to programatically setup your project board using the [project.py](/scripts/project.py) file located in the `/scripts` directory
-
-#### Step 1: Get Your GitHub Personal Access Token (`GITHUB_TOKEN`)
-1. Go to GitHub: [GitHub Developer Settings](https://github.com/settings/tokens).
-2. Generate a new token with `repo` and `project` permissions.
-3. Copy the token and store it securely.
-
----
-
-#### Step 2: Add GitHub Personal Access Token to Secrets
-
-1. Go to your repository on GitHub.
-1. Navigate to Settings > Secrets and variables > Actions.
-1. Click on New repository secret.
-1. Name the secret GH_TOKEN and paste in your token value, then save.
-
----
-
-#### Step 3: Update the Script
-
-1. Navigate to the `.github/workflows/setup-board.yml` file to see the GitHub Actions setup.
-2. Ensure the following variables are set:
-   - REPO: Repository name, e.g., "Repped-School/hack-user-profiles".
-   - BOARD_NAME: Name of the project board.
-
----
-
-#### Step 4: Push the changes to Github
-1. Add, commit and push up the changes
-1. Merge to the main branch
-
----
-
-#### Step 5: Run the Action
-
-1. Go to your repository on GitHub.
-1. Click on the Actions tab at the top of the repository page.
-1. Select the workflow you want to run (in this case, likely "Setup Project Board").
-1. Look for the "Run workflow" button on the right side of the workflow screen.
-1. Click the Run workflow button. If there are any input fields required, fill them out, then confirm.
-
----
-
 ## Project Collaboration Requirements
 
 - **Create a Repo**: Use the green "Use this template" button to create a repo from this template. **Do NOT fork.**
@@ -97,8 +52,10 @@ Display user profile cards with basic details (name, country). Users can hide/sh
    - **User Story**: As a team member, I want a Git repository and project board to collaboratively track and manage our progress.
    - **Acceptance Criteria**: 
      - Repository is created on GitHub, with access provided to all team members, and an initialized README file.
-     - Project board is set up using the provided [setup script].
-     - Script runs successfully, populating the board with all necessary columns and tickets for each phase.
+     - Project board is set up.
+     - Populate the board with all necessary columns and tickets for each phase:
+         - COLUMN_TITLES: "Phase 1, Phase 2, Phase 3, Phase 4, In Progress, Review, Done"
+
 
 2. **Fetch and Display User Profiles**
    - **User Story**: As a user, I want to see user profiles on the page.
