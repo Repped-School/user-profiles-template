@@ -8,6 +8,9 @@
 - [Phase 4: Filtering by Country and Name](#phase-4-filtering-by-country-and-name)
 
 > **NOTE**: Each phase builds on the previous one. Start with Phase 1 and progress sequentially.
+>
+> Each phase is carefully broken down to support beginner developers in learning React. Please proceed phase-by-phase, completing each ticket collaboratively for best learning outcomes.
+
 
 ---
 
@@ -149,7 +152,3 @@ Add filtering by country and sorting by first or last name to enhance search cap
 3. **Final Documentation**
    - **User Story**: As a team, we want complete documentation of our project.
    - **Acceptance Criteria**: README includes a project overview, final screenshots, and deployment link.
-
----
-
-Each phase is carefully broken down to support beginner developers in learning React. Please proceed phase-by-phase, completing each ticket collaboratively for best learning outcomes.
