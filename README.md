@@ -39,9 +39,12 @@ Display user profile cards with basic details (name, country). Users can hide/sh
 
 ### MVP Tickets (Phase 1)
 
-1. **Setup Repository**
-   - **User Story**: As a team member, I want a Git repository to track and save our project.
-   - **Acceptance Criteria**: Repository is created on GitHub, with access for all team members and an initialized README.
+1. **Setup Repository and Project Board**
+   - **User Story**: As a team member, I want a Git repository and project board to collaboratively track and manage our progress.
+   - **Acceptance Criteria**: 
+     - Repository is created on GitHub, with access provided to all team members, and an initialized README file.
+     - Project board is set up using the provided [setup script].
+     - Script runs successfully, populating the board with all necessary columns and tickets for each phase.
 
 2. **Fetch and Display User Profiles**
    - **User Story**: As a user, I want to see user profiles on the page.
