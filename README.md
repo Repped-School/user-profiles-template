@@ -1,6 +1,7 @@
 # User Profile Dashboard Project | [DEMO SITE](https://hack-user-profiles.netlify.app/)
 
 ## TABLE OF CONTENTS
+- [GET STARTED](#get-started)
 - [Project Collaboration Requirements](#project-collaboration-requirements)
 - [Phase 1: Basic Profile Cards with Favorite Button](#phase-1-basic-profile-cards-with-favorite-button)
 - [Phase 2: Add Modal for User Details and Favorites Column](#phase-2-add-modal-for-user-details-and-favorites-column)
@@ -11,6 +12,55 @@
 >
 > Each phase is carefully broken down to support beginner developers in learning React. Please proceed phase-by-phase, completing each ticket collaboratively for best learning outcomes.
 
+---
+
+## Get Started
+
+- Clone the repo
+- Run the following in the terminal
+```bash
+npm i
+npm run prepare
+```
+
+### Instructions for Setting Up GitHub Project Board
+
+We are going to programatically setup your project board using the [project.py](/scripts/project.py) file located in the `/scripts` directory
+
+#### Step 1: Get Your GitHub Personal Access Token (`GITHUB_TOKEN`)
+1. Go to GitHub: [GitHub Developer Settings](https://github.com/settings/tokens).
+2. Generate a new token with `repo` and `project` permissions.
+3. Copy the token and store it securely.
+
+---
+
+#### Step 2: Add GitHub Personal Access Token to Secrets
+
+1. Go to your repository on GitHub.
+1. Navigate to Settings > Secrets and variables > Actions.
+1. Click on New repository secret.
+1. Name the secret GH_TOKEN and paste in your token value, then save.
+
+---
+
+#### Step 3: Update the Script
+
+1. Navigate to the `.github/workflows/setup-board.yml` file to see the GitHub Actions setup.
+2. Ensure the following variables are set:
+   - REPO: Repository name, e.g., "Repped-School/hack-user-profiles".
+   - BOARD_NAME: Name of the project board.
+
+---
+
+#### Step 4: Push the changes to Github
+1. Add, commit and push up the changes
+1. Merge to the main branch
+
+---
+
+#### Step 5: Run the Action
+
+1. Run the action manually in the Actions tab of GitHub to set up the board with the designated columns.
 
 ---
 
