@@ -60,7 +60,11 @@ We are going to programatically setup your project board using the [project.py](
 
 #### Step 5: Run the Action
 
-1. Run the action manually in the Actions tab of GitHub to set up the board with the designated columns.
+1. Go to your repository on GitHub.
+1. Click on the Actions tab at the top of the repository page.
+1. Select the workflow you want to run (in this case, likely "Setup Project Board").
+1. Look for the "Run workflow" button on the right side of the workflow screen.
+1. Click the Run workflow button. If there are any input fields required, fill them out, then confirm.
 
 ---
 
